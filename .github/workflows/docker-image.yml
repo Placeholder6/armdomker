@@ -15,8 +15,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag zoomkek
-      run: docker push placeholderdip6/zoomkek:zoomkek
+      run: docker build . --file Dockerfile --tag zoomkek \
+      docker push placeholderdip6/zoomkek:zoomkek
     - name: Check out the repo
       uses: actions/checkout@v2
     - name: Log in to Docker Hub
